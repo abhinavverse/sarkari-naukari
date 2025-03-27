@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block pagetitle %}
+Home
+{% endblock pagetitle %}
+{% load static %}
+{% block home %}
+<section>
+    <!-- carousel & noticeboard -->
+    <div class="container">
+        <div class="row p-1">
+            <div class="col-sm-8 g-1">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <iframe class="d-block w-100" width="1920" height="420" src="https://www.youtube.com/embed/5rhHm6WWOIs?si=jgj7U5zuaYlvbqgO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <!-- <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="..."> -->
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold">Latest Notifications</div>
+                    <div class="card-body p-1">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A fourth item</li>
+                            <li class="list-group-item">And a fifth one</li>
+                            <li class="list-group-item">And a fifth one</li>
+                            <li class="list-group-item">And a fifth one</li>
+                            <li class="list-group-item">And a fifth one</li>
+                            <li class="list-group-item">And a fifth one</li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel noticeboard -->
+
+    <!-- short info section  -->
+     <div class="container">
+        <div class="row p-1">
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/latest-jobs">Latest Jobs &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/admissions">Admissions &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/admit-cards">Admit Cards &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-1">
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/results">Results &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/answer-keys">Asnwer Keys &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 g-1">
+                <div class="card">
+                    <div class="card-header fw-bold"><a class="text-decoration-none" href="/">Important &nbsp;<i class="bi bi-arrow-up-right-square"></i></a></div>
+                    <div class="card-body">
+                        
+                    </div>
+                    <div class="card-footer fw-bold">Important</div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- short info section  -->
+</section>
+
+<!-- by top recruters  -->
+ <div class="container">
+    <div class="row">
+        <div class="col-2 p-2 text-center fw-bold bg-primary">UPSC</div>
+        <div class="col-2 p-2 text-center fw-bold bg-info">BPSC</div>
+        <div class="col-2 p-2 text-center fw-bold bg-primary">UPPSC</div>
+        <div class="col-2 p-2 text-center fw-bold bg-warning">MPSC</div>
+        <div class="col-2 p-2 text-center fw-bold bg-primary">PPSC</div>
+        <div class="col-2 p-2 text-center fw-bold bg-danger">PPSC</div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/bpsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+        <div class="col-1"><img src="{% static 'assets/upsc_logo.png' %}" alt="" class="img-fluid"></div>
+    </div> -->
+ </div>
+<!-- by top recruters  -->
+{% endblock home %}
