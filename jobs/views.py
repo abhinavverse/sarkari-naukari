@@ -7,6 +7,9 @@ def home(request):
 def latest_jobs(request):
     return render(request, 'jobs.html')    
 
+def job_details(request):
+    return render(request, 'jobdetails.html')    
+
 def admissions(request):
     return render(request, 'admissions.html')    
 
